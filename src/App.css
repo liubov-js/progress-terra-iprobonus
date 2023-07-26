@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.Rectangle {
+  position: absolute;
+  width: 100%;
+  height: 148px;
+  top: 156px;
+  background: linear-gradient(#D2333E 0%, #F54B55 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.BonusContainer {
+  position: absolute;
+  top: 100px;
+  width: 335px;
+  height: 105px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(34, 60, 80, 0.3);
+  z-index: 2;
+  background-color: white;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Bonus {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.BonusExpires {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #979797;
+  line-height: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.MoveIcon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Logo {
+  position: absolute;
+  top: 56px;
+  left: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.InfoIcon {
+  position: absolute;
+  top: 56px;
+  right: 25px;
+  cursor: pointer;
 }
